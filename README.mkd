@@ -13,10 +13,12 @@ And add this gem into any other code with:
 Usage
 ------------
 There are basically four sections to this gem:
+
 * Integer extensions
 * Array extensions
 * String extensions
 * base module with special methods and constants
+
 
 
 ### Integer Extensions ###
@@ -61,6 +63,7 @@ Added to the Integer class are the following methods.  Most are self-explanatory
 **pos?** -- Test if a particular integer is positive.
 
 
+
 ### Array Extensions ###
 
 Added to the Array class are the following methods:
@@ -84,6 +87,7 @@ Added to the Array class are the following methods:
 **randomize!** -- Randomize the order of an array and make the change permanent.
 
 
+
 ### String Extensions ###
 
 Added to the String class are the following methods:
@@ -93,6 +97,7 @@ Added to the String class are the following methods:
 **is_palindrome?** -- A method to detect whether a given string is a palidrome. (e.g., ‘civic’.is_palindrome? # => true)
 
 **parens** -- A method to wrap parenthese around a given string.
+
 
 
 ### Base Module ###
