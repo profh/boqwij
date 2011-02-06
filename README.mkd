@@ -8,7 +8,7 @@ Installing this gem is pretty simple, although you have to remember that Ruby do
     $ gem install boqwij
 And add this gem into any other code with:
     require 'rubygems'
-		require 'boqwij'
+	require 'boqwij'
 
 Usage
 ------------
@@ -33,7 +33,7 @@ Added to the Integer class are the following methods.  Most are self-explanatory
 (_e.g., 6.fibonacci # => 8; 10.fibonacci # => 55_)
 
 **is_fibonacci?** -- Checks to see if integer is contained in the fibonacci sequence.
-(e.g, 12.is_fibonacci? # => false; 55.is_fibonacci? # => true_)
+(_e.g., 12.is_fibonacci? # => false; 55.is_fibonacci? # => true_)
 
 **is_divisible_by?(factor)** -- Test if a number is divisible by a given factor. 
 (_e.g., 18.is_divisible_by?(3) #=> true_)
