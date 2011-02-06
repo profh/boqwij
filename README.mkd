@@ -48,7 +48,7 @@ Added to the Integer class are the following methods.  Most are self-explanatory
 (_e.g., 1001.is_palindrome? # => true; 4654.is_palindrome? # => false_)
 
 **is_permutation_of?(int)** -- Compares two integers to see if they are permutations of each other. 
-(e.g, 314159.is_permutation?(431951) # => true_)
+(_e.g., 314159.is_permutation?(431951) # => true_)
 
 **length** -- Find the length of a particular integer.
 
