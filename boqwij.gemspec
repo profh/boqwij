@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email       = ["profh@cmu.edu"]
   s.homepage    = "http://rubygems.org/gems/boqwij"
   s.summary     = %q{A series of helpers and extensions I use for solving Project Euler problems and other mathematical diversions.}
-  s.description = %q{This is a series of methods and extensions I've written or collected from various sources over time to help me mainly in solving Project Euler problems and other mathematical games.  In case you are wondering about the name, 'boQwIj' is Klingon for 'my assistant', which is what these methods do for me when solving problems.}
+  s.description = %q{This is a series of methods and extensions I've written or collected from various sources over time to help me mainly in solving Project Euler problems and other mathematical games.  In case you are wondering about the name, boQwIj is Klingon for _my_assistant_, which is what these methods do for me when solving problems.}
 
   s.rubyforge_project = "boqwij"
 
