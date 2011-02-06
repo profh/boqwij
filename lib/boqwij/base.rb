@@ -11,7 +11,7 @@ module Boqwij
   # Optional second argument to set a starting place because some problems want a 
   # set of 100 prime numbers greater than 1,000 (for example).  The starting_at 
   # parameter will mean the first prime in the set has to be greater than this 
-  # given value. 
+  # given value. (e.g., Boqwij.get_prime_set(5) # => [2, 3, 5, 7, 11])
   def get_prime_set(n, *starting_at)
     @prime_set = Array.new
     st_point = starting_at[0] || 2
