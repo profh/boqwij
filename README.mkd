@@ -1,0 +1,112 @@
+boQwIj
+==========
+This is a series of methods and extensions I've written or collected from various sources over time to help me mainly in solving [Project Euler](http://projecteuler.net/) problems and other mathematical games.  In case you are wondering about the name, 'boQwIj' is Klingon for 'my assistant', which is what these methods do for me when solving problems.
+
+Installation
+------------
+Installing this gem is pretty simple, although you have to remember that Ruby does not handle Klingon capitalization well.  Anyways, just type on the command line:
+    $ gem install boqwij
+And add this gem into any other code with:
+    require 'rubygems'
+		require 'boqwij'
+
+Usage
+------------
+There are basically four sections to this gem:
+* Integer extensions
+* Array extensions
+* String extensions
+* base module with special methods and constants
+
+
+### Integer Extensions ###
+
+Added to the Integer class are the following methods.  Most are self-explanatory and some have other Ruby equivalents already. 
+(I wrote code that I could remember easily to help me get through problems faster.)
+
+**factorial** -- Get the factorial of given number. 
+(e.g., 6.factorial # => 720)
+
+**fibonacci** -- Get the fibonacci number associated with a particular integer. 
+(e.g., 6.fibonacci # => 8; 10.fibonacci # => 55)
+
+**is_fibonacci?** -- Checks to see if integer is contained in the fibonacci sequence.
+(e.g, 12.is_fibonacci? # => false; 55.is_fibonacci? # => true)
+
+**is_divisible_by?(factor)** -- Test if a number is divisible by a given factor. 
+(e.g., 18.is_divisible_by?(3) #=> true)
+
+**is_prime?** -- Test to see if a given number is prime.
+(e.g., 43.is_prime? # => true; 4.is_prime? # => false;)
+
+**prime_factors** -- Returns an array of prime factors for any integer. 
+(e.g., 30.prime_factors # => [2,3,5])
+
+**is_palindrome?** -- Test to see if a given number is a palindrome.
+(e.g., 1001.is_palindrome? # => true; 4654.is_palindrome? # => false)
+
+**is_permutation_of?(int)** -- Compares two integers to see if they are permutations of each other. 
+(e.g, 314159.is_permutation?(431951) # => true)
+
+**length** -- Find the length of a particular integer.
+
+**delimit** -- Add a delimiter to every three digits of a long integer. The default delimiter is a comma.
+
+**even?** -- Test if a particular integer is even.
+
+**odd?** -- Test if a particular integer is odd.
+
+**neg?** -- Test if a particular integer is negative.
+
+**pos?** -- Test if a particular integer is positive.
+
+
+### Array Extensions ###
+
+Added to the Array class are the following methods:
+
+**sum** -- Get the sum of an all-numeric array. Raises a runtime error if non-numeric array is used.
+
+**product** -- Get the product of an all-numeric array. Raises a runtime error if non-numeric array is used.
+
+**mean** -- Get the mean of an all-numeric array. Raises a runtime error if non-numeric array is used.
+
+**median** -- Get the median of an all-numeric array. Raises a runtime error if non-numeric array is used.
+
+**range** -- Get the range of values in an all-numeric array. Raises a runtime error if non-numeric array is used.
+
+**stdev** -- Get the standard deviation of an all-numeric array. Raises a runtime error if non-numeric array is used.
+
+**random** -- Get the first value of a randomized array.
+
+**randomize** -- Randomize the order of an array.
+
+**randomize!** -- Randomize the order of an array and make the change permanent.
+
+
+### String Extensions ###
+
+Added to the String class are the following methods:
+
+**capwords** -- A method to capitalize the first letter of each word in a string.
+
+**is_palindrome?** -- A method to detect whether a given string is a palidrome. (e.g., ‘civic’.is_palindrome? # => true)
+
+**parens** -- A method to wrap parenthese around a given string.
+
+
+### Base Module ###
+
+The base module has the following methods and constants associated with it:
+
+**PI_10000** -- Define 10,000 digits of pi.  This is a string with no decimal place that can be parsed as needed.
+
+**E_10000** -- Define 10,000 digits of e.  This is a string with no decimal place that can be parsed as needed.
+
+**get_prime_set(n, *starting_at)** -- Returns an array of prime numbers, the length of that array being n.  Optional second argument to set a starting place because some problems want a set of 100 prime numbers greater than 1,000 (for example).  The starting_at parameter will mean the first prime in the set has to be greater than this given value. 
+
+**get_fibonacci_set(n, *starting_at)** -- Returns an array of integers which is the Fibonacci sequence of length n.  Optional second parameter is 'starting_at' because some problems want a set of 25 Fibonacci numbers, but starting at a particular value such as 100.
+
+**is_pythagorean_triplet?(a, b, c)** -- Determines if the three values given are a pythagorean triplet. (e.g., Boqwij.is_pythagorean_triplet?(3, 4, 5) # => true)
+
+**find_missing_pyth_triplet(a, b, c)** -- Given any two values of a pythagorean triplet, method returns the missing value. (e.g., Boqwij.find_missing_pyth_triplet(3, 4, nil) # => 5)
