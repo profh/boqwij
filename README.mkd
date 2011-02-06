@@ -27,28 +27,28 @@ Added to the Integer class are the following methods.  Most are self-explanatory
 (I wrote code that I could remember easily to help me get through problems faster.)
 
 **factorial** -- Get the factorial of given number. 
-(e.g., 6.factorial # => 720)
+(_e.g., 6.factorial # => 720_)
 
 **fibonacci** -- Get the fibonacci number associated with a particular integer. 
-(e.g., 6.fibonacci # => 8; 10.fibonacci # => 55)
+(_e.g., 6.fibonacci # => 8; 10.fibonacci # => 55_)
 
 **is_fibonacci?** -- Checks to see if integer is contained in the fibonacci sequence.
-(e.g, 12.is_fibonacci? # => false; 55.is_fibonacci? # => true)
+(e.g, 12.is_fibonacci? # => false; 55.is_fibonacci? # => true_)
 
 **is_divisible_by?(factor)** -- Test if a number is divisible by a given factor. 
-(e.g., 18.is_divisible_by?(3) #=> true)
+(_e.g., 18.is_divisible_by?(3) #=> true_)
 
 **is_prime?** -- Test to see if a given number is prime.
-(e.g., 43.is_prime? # => true; 4.is_prime? # => false;)
+(_e.g., 43.is_prime? # => true; 4.is_prime? # => false_)
 
 **prime_factors** -- Returns an array of prime factors for any integer. 
-(e.g., 30.prime_factors # => [2,3,5])
+(_e.g., 30.prime_factors # => [2,3,5]_)
 
 **is_palindrome?** -- Test to see if a given number is a palindrome.
-(e.g., 1001.is_palindrome? # => true; 4654.is_palindrome? # => false)
+(_e.g., 1001.is_palindrome? # => true; 4654.is_palindrome? # => false_)
 
 **is_permutation_of?(int)** -- Compares two integers to see if they are permutations of each other. 
-(e.g, 314159.is_permutation?(431951) # => true)
+(e.g, 314159.is_permutation?(431951) # => true_)
 
 **length** -- Find the length of a particular integer.
 
@@ -94,7 +94,7 @@ Added to the String class are the following methods:
 
 **capwords** -- A method to capitalize the first letter of each word in a string.
 
-**is_palindrome?** -- A method to detect whether a given string is a palidrome. (e.g., ‘civic’.is_palindrome? # => true)
+**is_palindrome?** -- A method to detect whether a given string is a palidrome. (_e.g., ‘civic’.is_palindrome? # => true_)
 
 **parens** -- A method to wrap parenthese around a given string.
 
@@ -108,10 +108,10 @@ The base module has the following methods and constants associated with it:
 
 **E_10000** -- Define 10,000 digits of e.  This is a string with no decimal place that can be parsed as needed.
 
-**get_prime_set(n, *starting_at)** -- Returns an array of prime numbers, the length of that array being n.  Optional second argument to set a starting place because some problems want a set of 100 prime numbers greater than 1,000 (for example).  The starting_at parameter will mean the first prime in the set has to be greater than this given value. (e.g., Boqwij.get_prime_set(5) # => [2, 3, 5, 7, 11]; Boqwij.get_prime_set(5,100) # => [101, 103, 107, 109, 113])
+**get_prime_set(n, *starting_at)** -- Returns an array of prime numbers, the length of that array being n.  Optional second argument to set a starting place because some problems want a set of 100 prime numbers greater than 1,000 (for example_).  The starting_at parameter will mean the first prime in the set has to be greater than this given value. (_e.g., Boqwij.get_prime_set(5) # => [2, 3, 5, 7, 11]; Boqwij.get_prime_set(5,100) # => [101, 103, 107, 109, 113]_)
 
-**get_fibonacci_set(n, *starting_at)** -- Returns an array of integers which is the Fibonacci sequence of length n.  Optional second parameter is 'starting_at' because some problems want a set of 25 Fibonacci numbers, but starting at a particular value such as 100. (e.g., Boqwij.get_fibonacci_set(6) # => [1, 1, 2, 3, 5, 8])
+**get_fibonacci_set(n, *starting_at)** -- Returns an array of integers which is the Fibonacci sequence of length n.  Optional second parameter is 'starting_at' because some problems want a set of 25 Fibonacci numbers, but starting at a particular value such as 100. (_e.g., Boqwij.get_fibonacci_set(6) # => [1, 1, 2, 3, 5, 8]_)
 
-**is_pythagorean_triplet?(a, b, c)** -- Determines if the three values given are a pythagorean triplet. (e.g., Boqwij.is_pythagorean_triplet?(3, 4, 5) # => true)
+**is_pythagorean_triplet?(a, b, c)** -- Determines if the three values given are a pythagorean triplet. (_e.g., Boqwij.is_pythagorean_triplet?(3, 4, 5) # => true_)
 
-**find_missing_pyth_triplet(a, b, c)** -- Given any two values of a pythagorean triplet, method returns the missing value. (e.g., Boqwij.find_missing_pyth_triplet(3, 4, nil) # => 5)
+**find_missing_pyth_triplet(a, b, c)** -- Given any two values of a pythagorean triplet, method returns the missing value. (_e.g., Boqwij.find_missing_pyth_triplet(3, 4, nil) # => 5_)
