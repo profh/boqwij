@@ -108,7 +108,7 @@ The base module has the following methods and constants associated with it:
 
 **E_10000** -- Define 10,000 digits of e.  This is a string with no decimal place that can be parsed as needed.
 
-**get_prime_set(n, *starting_at)** -- Returns an array of prime numbers, the length of that array being n.  Optional second argument to set a starting place because some problems want a set of 100 prime numbers greater than 1,000 (for example_).  The starting_at parameter will mean the first prime in the set has to be greater than this given value. (_e.g., Boqwij.get_prime_set(5) # => [2, 3, 5, 7, 11]; Boqwij.get_prime_set(5,100) # => [101, 103, 107, 109, 113]_)
+**get_prime_set(n, *starting_at)** -- Returns an array of prime numbers, the length of that array being n.  Optional second argument to set a starting place because some problems want a set of 100 prime numbers greater than 1,000 (for example).  The starting_at parameter will mean the first prime in the set has to be greater than this given value. (_e.g., Boqwij.get_prime_set(5) # => [2, 3, 5, 7, 11]; Boqwij.get_prime_set(5,100) # => [101, 103, 107, 109, 113]_)
 
 **get_fibonacci_set(n, *starting_at)** -- Returns an array of integers which is the Fibonacci sequence of length n.  Optional second parameter is 'starting_at' because some problems want a set of 25 Fibonacci numbers, but starting at a particular value such as 100. (_e.g., Boqwij.get_fibonacci_set(6) # => [1, 1, 2, 3, 5, 8]_)
 
